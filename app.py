@@ -20,5 +20,5 @@ quest=sq-sp
 Stoken=(sq-sp)*10000000
 rtoken=(fsr-csr)*1559
 st.title(f'Quest Point Required:{quest:,d} ')
-st.title(f'S-token Required :{Stoken:,d}M')
+st.title(f'S-token Required :{Stoken:,d}')
 st.title(f'R-token Required:{rtoken:,d}')
