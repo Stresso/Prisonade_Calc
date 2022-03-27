@@ -12,9 +12,9 @@ for i in range(0, csr + 1):
     f += i
 for i in range(0, fsr + 1):
     g += i
-for i in range(1, csr):
+for i in range(1, csr+1):
     sp += i
-for i in range(1, fsr):
+for i in range(1, fsr+1):
     sq += i
 quest=sq-sp
 Stoken=(sq-sp)*10000000
