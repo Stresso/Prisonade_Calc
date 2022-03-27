@@ -17,8 +17,8 @@ for i in range(1, csr):
 for i in range(1, fsr):
     sq += i
 quest=sq-sp
-Stoken=(sq-sp)*10
+Stoken=(sq-sp)*10000000
 rtoken=(fsr-csr)*1559
 st.title(f'Quest Point Required:{quest:,d} ')
-st.title(f'S-token Required:{Stoken:,d}')
+st.title(f'S-token Required :{Stoken:,d}M')
 st.title(f'R-token Required:{rtoken:,d}')
