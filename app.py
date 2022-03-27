@@ -19,4 +19,6 @@ for i in range(1, fsr):
 quest=sq-sp
 Stoken=(sq-sp)*10
 rtoken=(fsr-csr)*1559
-st.title(f'Quest Point Required:{quest} | Stoken Required:{Stoken} | Rtoken Required:{rtoken}')
+st.title(f'Quest Point Required:{quest:,d} ')
+st.title(f'S-token Required:{Stoken:,d}')
+st.title(f'R-token Required:{rtoken:,d}')
