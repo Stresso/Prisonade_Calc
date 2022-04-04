@@ -18,7 +18,7 @@ for i in range(1, fsr+1):
     sq += i
 cheapSR=st.radio("Cheap SR Unlocked (S tokens is 10x Cheaper",("Yes","No"))
 quest=sq-sp
-if cheapSR='Yes':
+if cheapSR=='Yes':
     Stoken=(sq-sp)*1000000   
 else:
     Stoken=(sq-sp)*10000000
