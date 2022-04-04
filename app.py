@@ -16,9 +16,13 @@ for i in range(1, csr+1):
     sp += i
 for i in range(1, fsr+1):
     sq += i
+cheapSR=st.radio("Cheap SR Unlocked (S tokens is 10x Cheaper",("Yes","No"))
 quest=sq-sp
-Stoken=(sq-sp)*10000000
-rtoken=(fsr-csr)*1559
+if cheapSR='Yes':
+    Stoken=(sq-sp)*1000000   
+else:
+    Stoken=(sq-sp)*10000000
+rtoken=(fsr-csr)*1553
 st.title(f'Quest Point Required:{quest:,d} ')
 st.title(f'S-token Required :{Stoken:,d}')
 st.title(f'R-token Required:{rtoken:,d}')
