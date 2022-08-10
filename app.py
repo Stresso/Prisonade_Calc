@@ -69,8 +69,8 @@ elif dim=="Hell":
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Netherrack and Magma ")
      elif block == "Magma - Fire Gold Mix":
           a = val * 7
-          b = int(val / 64)
-          c = val % 64
+          b = int(a / 64)
+          c = a % 64
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Magma and Fire Gold ")
      elif block == "Fire Gold - Hell Rock Mix":
           fg=val*12
