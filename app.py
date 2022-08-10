@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="Prisonade Calculator")
 st.subheader("Which Dimension:")
 dim = st.radio("",('Spawn', 'Frozen', 'Hell'))
 st.subheader("Which Block")
