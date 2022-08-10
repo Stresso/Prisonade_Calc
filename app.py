@@ -37,8 +37,8 @@ elif dim=="Frozen":
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Blue Ice - Prismarine Mix':
           a=val*4
-          b = int(val / 64)
-          c = val % 64
+          b = int(a / 64)
+          c = a % 64
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Ice and Prismarine ")
      elif block == "Prismarine - Frozen Diamond Mix":
           pri = val * 8
@@ -64,8 +64,8 @@ elif dim=="Hell":
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Netherrack - Magma Mix':
           a=val*4
-          b = int(val / 64)
-          c = val % 64
+          b = int(a / 64)
+          c = a % 64
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Netherrack and Magma ")
      elif block == "Magma - Fire Gold Mix":
           a = val * 7
