@@ -22,7 +22,7 @@ if dim=="Spawn":
           a=val*10
           b=int(a/64)
           c=a%64
-          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
+          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Emerald and Diamond ")
      else:
           dia=val*42
           eme=val*30
