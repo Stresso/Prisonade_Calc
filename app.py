@@ -56,7 +56,7 @@ elif dim=="Desert":
           pri = val * 40
           st.header(f"You need {int(ame / 64):,d} Stacks and {ame % 64} T3 Copper ")
           st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Gold")
-          st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Desert Gem
+          st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Desert Gem")
 elif dim=="Jungle":
      block = st.radio(
           "",
