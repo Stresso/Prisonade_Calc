@@ -7,18 +7,18 @@ st.subheader("Which Block")
 if dim=="Spawn":
      block = st.radio(
           "",
-          ('Iron-Stone Mix', 'Diamond-Iron Mix', 'Emerald-Diamond Mix','Ridge Mix'))
+          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','Summit Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
-     if block=='Iron-Stone Mix':
+     if block=='Stone-Iron Mix':
           a = int(val / 64)
           b = val % 64
           st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron ")
-     elif block=="Diamond-Iron Mix":
+     elif block=="Iron-Diamond Mix":
           a=val*4
           b=int(a/64)
           c=a%64
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
-     elif block=="Emerald-Diamond Mix":
+     elif block=="Diamond-Emerald Mix":
           a=val*8
           b=int(a/64)
           c=a%64
