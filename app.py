@@ -40,7 +40,7 @@ elif dim=="Desert":
           b = int(a / 64)
           c = a % 64
           st.header(f"You need {b:,d} stacks and {c} blocks of T3 Sandstone and Copper ")
-     elif block == "Prismarine - Frozen Diamond Mix":
+     elif block == "Copper-Gold Mix":
           pri = val * 6
           fd=val*5
           st.header(f"You need {int(pri/64):,d} stacks and {pri%64} blocks of T3 Copper")
