@@ -139,4 +139,4 @@ elif dim=="Abyss":
           st.header(f"You need {int(fg / 64):,d} Stacks and {fg % 64} T3 Hell Rock ")
           st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Obsidian ")
 st.caption(f"Any Bugs ?")
-st.caption(f"Message Stresso#6710 On Discord")
+st.caption(f"Message Stresso#6710 or Illusioner_#0127 On Discord ")
