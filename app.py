@@ -12,17 +12,26 @@ if dim=="Spawn":
      if block=='Stone-Iron Mix':
           a = int(val / 64)
           b = val % 64
-          st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron ")
+          if ((b % 64)==0):
+               st.header(f"You need {(a / 64):,d} Stacks of T3 Stone and Iron")
+          else:
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron ")
      elif block=="Iron-Diamond Mix":
           a=val*4
           b=int(a/64)
           c=a%64
-          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
+          if ((c % 64)==0):
+               st.header(f"You need {b / 64):,d} Stacks of T3 Iron and Diamond")
+          else:
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
      elif block=="Diamond-Emerald Mix":
           a=val*8
           b=int(a/64)
           c=a%64
-          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Emerald and Diamond ")
+          if ((c % 64)==0):
+               st.header(f"You need {int(b / 64):,d} Stacks of T3 Diamond and Emerald")
+          else:
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
      else:
           dia=val*36
           eme=val*24
