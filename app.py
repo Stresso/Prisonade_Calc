@@ -30,11 +30,11 @@ if dim=="Spawn":
           if ((iron % 64)==0):
                st.header(f"You need {int(iron / 64):,d} Stacks of T3 Iron")
           else:
-               st.header(f"You need {int(iron / 64):,d} Stacks and {iron % 64} T3 Iron")12
+               st.header(f"You need {int(iron / 64):,d} Stacks and {iron % 64} T3 Iron")
           if ((dia % 64)==0):
                st.header(f"You need {int(dia / 64):,d} Stacks of T3 Diamond")
           else:
-               st.header(f"You need {int(dia/64):,d} Stacks and {dia%64} T3 Diamond")12
+               st.header(f"You need {int(dia/64):,d} Stacks and {dia%64} T3 Diamond")
           if ((eme % 64)==0):
                st.header(f"You need {int(eme / 64):,d} Stacks of T3 Emerald")
           else:
