@@ -57,24 +57,45 @@ elif dim=="Desert":
           a=val*2
           b = int(a / 64)
           c = a % 64
-          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Sandstone and Copper ")
+          if ((c % 64)==0):
+               st.header(f"You need {b:,d} Stacks of T3 Sandstone and Copper")
+          else:
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Sandstone and Copper ")
      elif block == "Copper-Gold Mix":
           pri = val * 6
           fd=val*5
-          st.header(f"You need {int(pri/64):,d} stacks and {pri%64} blocks of T3 Copper")
-          st.header(f"You need {int(fd/64):,d} stacks and {fd%64} blocks of T3 Gold")
+          if ((pri % 64)==0):
+               st.header(f"You need {int(pri/64):,d} Stacks of T3 Copper")
+          else:
+               st.header(f"You need {int(pri/64):,d} stacks and {pri%64} blocks of T3 Copper")
+          if ((fd % 64)==0):
+               st.header(f"You need {int(fd/64):,d} Stacks of T3 Gold")
+          else:
+               st.header(f"You need {int(fd/64):,d} stacks and {fd%64} blocks of T3 Gold")
      elif block == "Gold-Desert Gem Mix":
           a = val * 10
           b = int(a / 64)
           c = a % 64
-          st.header(f"You need {b:,d} stacks and {c} blocks of T3 Gold and Desert Gem ")
+          if ((c % 64)==0):
+               st.header(f"You need {b:,d} Stacks of T3 Gold and Desert Gem")
+          else:
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Gold and Desert Gem ")
      else:
           ame = val * 24
           fd = val * 60
           pri = val * 40
-          st.header(f"You need {int(ame / 64):,d} Stacks and {ame % 64} T3 Copper ")
-          st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Gold")
-          st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Desert Gem")
+          if ((ame % 64)==0):
+               st.header(f"You need {int(ame/64):,d} Stacks of T3 Copper")
+          else:
+               st.header(f"You need {int(ame / 64):,d} Stacks and {ame % 64} T3 Copper ")
+          if ((fd % 64)==0):
+               st.header(f"You need {int(fd/64):,d} Stacks of T3 Copper")
+          else:
+               st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Gold")
+          if ((pri % 64)==0):
+               st.header(f"You need {int(pri/64):,d} Stacks of T3 Copper")
+          else:
+               st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Desert Gem")
 elif dim=="Jungle":
      block = st.radio(
           "",
