@@ -13,7 +13,7 @@ if dim=="Spawn":
           a = int(val / 64)
           b = val % 64
           if ((b % 64)==0):
-               st.header(f"You need {(a:,d} Stacks of T3 Stone and Iron")
+               st.header(f"You need {a:,d} Stacks of T3 Stone and Iron")
           else:
                st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron ")
      elif block=="Iron-Diamond Mix":
@@ -29,7 +29,7 @@ if dim=="Spawn":
           b=int(a/64)
           c=a%64
           if ((c % 64)==0):
-               st.header(f"You need {int(b:,d} Stacks of T3 Diamond and Emerald")
+               st.header(f"You need {b:,d} Stacks of T3 Diamond and Emerald")
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
      else:
