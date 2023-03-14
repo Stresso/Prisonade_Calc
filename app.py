@@ -52,7 +52,7 @@ if dim=="River":
 if dim=="Ranch":
      block = st.radio(
           "",
-          ('Granite-Coal Mix', 'Coal-Copper Mix', 'Copper-Redstone Mix','River Mix'))
+          ('Granite-Coal Mix', 'Coal-Copper Mix', 'Copper-Redstone Mix','Ranch Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
      if block=='Granite-Coal Mix':
           a = val*4
