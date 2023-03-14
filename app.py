@@ -1,7 +1,7 @@
 
 import streamlit as st
 
-st.set_page_config(page_title="Prisonade Calculator")
+st.set_page_config(page_title="MineUnWind Calculator")
 st.subheader("Which Realm:")
 dim = st.radio("",('River', 'Ranch', 'Port','Empire','Citadel'))
 st.subheader("Which Block")
