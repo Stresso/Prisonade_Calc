@@ -137,7 +137,7 @@ elif dim=="Empire":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Aztec Relic")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Azteec Relic")
-     elif block == "Aztec Relic-Amethyst Mix Mix":
+     elif block == "Aztec Relic-Amethyst Mix":
           a = val * 13
           b = int(a / 64)
           c = a % 64
