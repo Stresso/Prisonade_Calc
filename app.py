@@ -49,6 +49,18 @@ if dim=="River":
                st.header(f"You need {int(pri/64):,d} Stacks of T3 Emerald")
           else:
                st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Emerald")
+if dim=="Ranch":
+     block = st.radio(
+          "",
+          ('Granite-Coal Mix', 'Coal-Copper Mix', 'Copper-Redstone Mix','River Mix'))
+     val=int(st.text_input('How Many Blocks?', 0))
+     if block=='Granite-Coal Mix':
+          a = val*4
+          b = a % 64
+          if ((b % 64)==0):
+               st.header(f"You need {a:,d} Stacks of  T3 Stone and Iron")
+          else:
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron")
      elif block == "Coal-Copper Mix":
           pri = val * 6
           fd=val*5
