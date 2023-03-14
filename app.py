@@ -14,22 +14,41 @@ if dim=="River":
           a = int(val / 64)
           b = val % 64
           if ((b % 64)==0):
-               st.header(f"You need {a:,d} Stacks of  T3 Emerald")
+               st.header(f"You need {a:,d} Stacks of  T3 Stone and Iron")
           else:
-               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Emerald")
-elif dim=="Ranch":
-     block = st.radio(
-          "",
-          ('Granite-Coal Mix','Coal-Copper Mix','Copper-Redstone Gem Mix','Ranch Mix'))
-     val = int(st.text_input('How Many Blocks?', 0))
-     if block == 'Granite-Coal Mix':
-          a=val*2
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron")
+     elif block == "Iron-Diamond Mix":
+          a=val*4
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Granite and Coal ")
+               st.header(f"You need {b:,d} Stacks of T3 Iron and Diamond ")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Granite and Coal ")
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
+     elif block == "Diamond-Emerald Mix":
+          a = val * 8
+          b = int(a / 64)
+          c = a % 64
+          if ((c % 64)==0):
+               st.header(f"You need {b:,d} Stacks of T3 Diamond and Emerald")
+          else:
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
+     else:
+          ame = val * 12
+          fd = val * 36
+          pri = val * 24
+          if ((ame % 64)==0):
+               st.header(f"You need {int(ame/64):,d} Stacks of T3 Iron")
+          else:
+               st.header(f"You need {int(ame / 64):,d} Stacks and {ame % 64} T3 Iron ")
+          if ((fd % 64)==0):
+               st.header(f"You need {int(fd/64):,d} Stacks of T3 Diamond")
+          else:
+               st.header(f"You need {int(fd / 64):,d} Stacks and {fd % 64} T3 Diamond")
+          if ((pri % 64)==0):
+               st.header(f"You need {int(pri/64):,d} Stacks of T3 Emerald")
+          else:
+               st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Emerald")
      elif block == "Coal-Copper Mix":
           pri = val * 6
           fd=val*5
