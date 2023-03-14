@@ -195,9 +195,9 @@ elif dim=="Citadel":
           if ((hr % 64)==0):
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Obsidian")
           else:
+          mg = val * 80
           fg = val * 184
           hr = val * 64
-          mg = val *80
           if ((mg % 64)==0):
                st.header(f"You need {int(mg/64):,d} Stacks of Purpur")
           else:
