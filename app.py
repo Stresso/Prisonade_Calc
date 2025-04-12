@@ -244,4 +244,4 @@ elif dim=="Citadel":
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Obsidian ({hr} blocks)")
 st.caption(f"Any Bugs ?")
-st.caption(f"Message Illusioner_#0127 On Discord ")
+st.caption(f"Message Illusioner_ on discord!")
